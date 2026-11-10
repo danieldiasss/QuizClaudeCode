@@ -23,6 +23,10 @@ Product spec: `prd.md` (business + technical). Implementation follows its milest
 ## Architecture rules
 
 - **The answer key never reaches the client.** `src/content/questions.json` and `src/lib/questions.ts` are server-only; `/api/quiz/start` returns statements without `answer`/`explanation`. Score and duration are computed on the server only.
+- Business rules live in `src/lib/quiz-service.ts` (pure, tested with the memory store); route handlers in `src/app/api` are thin wrappers. Put new rules in the service, not the routes.
+- Each round has a secret token (only its hash is stored); submit and publish require it, so shared result links can't be claimed by others.
+- Production serves only `reviewed: true` questions unless `QUIZ_INCLUDE_UNREVIEWED=true`; each level needs ≥ 10 playable questions or start returns 503.
+- Only the next-intl namespaces listed in `CLIENT_NAMESPACES` (`src/app/[locale]/layout.tsx`) reach the browser. A Client Component using a new namespace must be added there.
 - Persistence goes through the `QuizStore` interface (`src/lib/store`): `DATA_STORE=memory` for dev/tests, `supabase` in production. Never call Supabase directly from routes/components, and never expose `SUPABASE_SERVICE_ROLE_KEY` (no `NEXT_PUBLIC_`).
 - All UI strings live in `src/i18n/messages/{pt,en}.json`; both files must keep identical keys (enforced by a test).
 - Colors come from CSS variable tokens in `src/app/globals.css` (Tailwind classes like `bg-accent`, `text-muted`); dark mode is class-based via next-themes.
