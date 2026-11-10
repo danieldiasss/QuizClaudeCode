@@ -5,6 +5,7 @@
   },
   "Header": {
     "brand": "Quiz V ou F · Claude Code",
+    "brandShort": "Quiz V ou F",
     "leaderboard": "Ranking",
     "about": "Sobre",
     "language": "Idioma",
@@ -13,8 +14,117 @@
   "Footer": {
     "disclaimer": "Projeto da comunidade, não afiliado à Anthropic."
   },
+  "Levels": {
+    "beginner": "Iniciante",
+    "intermediate": "Intermediário",
+    "advanced": "Avançado"
+  },
   "Home": {
     "title": "Quanto você sabe sobre Claude Code?",
-    "subtitle": "10 afirmações de Verdadeiro ou Falso. Escolha um nível, responda tudo e veja o resultado no final."
+    "subtitle": "10 afirmações de Verdadeiro ou Falso. Escolha um nível, responda tudo e veja o resultado no final.",
+    "chooseLevel": "Escolha um nível",
+    "pointsPerCorrect": "{points} pts por acerto",
+    "maxScore": "até {max} pts",
+    "play": "Jogar",
+    "seeLeaderboard": "Ver o ranking",
+    "beginnerDescription": "O que é o Claude Code, onde ele roda, para quem é e como funciona o acesso.",
+    "intermediateDescription": "Uso no dia a dia: comandos, atalhos, CLAUDE.md, modos de permissão e plan mode.",
+    "advancedDescription": "Hooks, MCP, skills, plugins, subagents, modo headless, CI e sandbox."
+  },
+  "Quiz": {
+    "loading": "Preparando suas perguntas…",
+    "progress": "Pergunta {current} de {total}",
+    "statementLabel": "Esta afirmação é verdadeira ou falsa?",
+    "true": "Verdadeiro",
+    "false": "Falso",
+    "back": "Voltar",
+    "next": "Avançar",
+    "seeResult": "Ver resultado",
+    "submitting": "Calculando…",
+    "keyboardHint": "Atalhos: V ou ← para Verdadeiro · F ou → para Falso",
+    "answeredCount": "{count} de {total} respondidas",
+    "errorStart": "Não foi possível carregar as perguntas.",
+    "errorSubmit": "Não foi possível enviar suas respostas. Elas continuam salvas aqui.",
+    "errorExpired": "Esta rodada expirou. Comece uma nova.",
+    "errorRateLimited": "Muitas tentativas seguidas. Espere alguns minutos e tente de novo.",
+    "retry": "Tentar novamente",
+    "restart": "Começar nova rodada",
+    "backHome": "Voltar para o início"
+  },
+  "Result": {
+    "title": "Seu resultado",
+    "level": "Nível {level}",
+    "points": "{score} pts",
+    "correct": "{correct}/{total} acertos",
+    "time": "Tempo: {time}",
+    "band_low": "Bom começo! Leia as explicações abaixo e tente de novo.",
+    "band_mid": "Mandou bem! Você já conhece bastante do Claude Code.",
+    "band_high": "Excelente! Você domina o Claude Code.",
+    "band_perfect": "Perfeito! 10 de 10. Hora de tentar o próximo nível?",
+    "reviewTitle": "Revisão das respostas",
+    "yourAnswer": "Sua resposta: {answer}",
+    "correctAnswer": "Resposta correta: {answer}",
+    "correctLabel": "Acertou",
+    "wrongLabel": "Errou",
+    "learnMore": "Saiba mais na documentação",
+    "playAgain": "Jogar novamente",
+    "otherLevel": "Tentar outro nível",
+    "seeLeaderboard": "Ver ranking",
+    "notFound": "Não encontramos este resultado.",
+    "notFinished": "Esta rodada ainda não foi finalizada."
+  },
+  "Publish": {
+    "title": "Entrar no ranking",
+    "nicknameLabel": "Apelido",
+    "nicknamePlaceholder": "Como você quer aparecer",
+    "nicknameHint": "De 3 a 20 caracteres: letras, números, espaço, _ - .",
+    "submit": "Enviar",
+    "sending": "Enviando…",
+    "success": "Você está em #{rank} de {total}!",
+    "alreadyPublished": "Este resultado já está no ranking.",
+    "tooFast": "Esta rodada foi rápida demais para entrar no ranking.",
+    "notOwner": "Só quem jogou esta rodada pode enviá-la ao ranking.",
+    "error_too_short": "O apelido precisa ter pelo menos 3 caracteres.",
+    "error_too_long": "O apelido pode ter no máximo 20 caracteres.",
+    "error_invalid_chars": "Use só letras, números, espaço, _ - ou .",
+    "error_blocked": "Esse apelido não é permitido. Escolha outro.",
+    "errorNetwork": "Não foi possível enviar. Tente novamente.",
+    "errorRateLimited": "Muitas tentativas. Espere alguns minutos."
+  },
+  "Share": {
+    "title": "Compartilhe",
+    "text": "Fiz {score} pts ({correct}/10) no nível {level} do Quiz Verdadeiro ou Falso sobre Claude Code! Consegue me superar?",
+    "native": "Compartilhar",
+    "linkedin": "LinkedIn",
+    "x": "X",
+    "copy": "Copiar texto",
+    "copied": "Copiado!"
+  },
+  "Leaderboard": {
+    "title": "Ranking",
+    "subtitle": "Pontuação total; em caso de empate, vence o menor tempo.",
+    "rank": "#",
+    "nickname": "Apelido",
+    "score": "Pontos",
+    "level": "Nível",
+    "correct": "Acertos",
+    "time": "Tempo",
+    "date": "Data",
+    "empty": "Seja o primeiro a entrar no ranking!",
+    "loadMore": "Carregar mais",
+    "loading": "Carregando…",
+    "you": "você",
+    "play": "Jogar agora"
+  },
+  "About": {
+    "title": "Sobre o projeto",
+    "body1": "Este é um quiz da comunidade para testar e aprender sobre o Claude Code, a ferramenta de programação agêntica da Anthropic.",
+    "body2": "Todas as afirmações foram escritas a partir da documentação oficial, e cada resposta traz um link para a página que a confirma. O Claude Code muda rápido; se encontrar algo desatualizado, confira a documentação.",
+    "disclaimer": "Este projeto não é afiliado, patrocinado nem endossado pela Anthropic.",
+    "docsLink": "Documentação oficial do Claude Code"
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "backHome": "Voltar para o início"
   }
 }

@@ -10,8 +10,12 @@ export async function SiteHeader() {
   return (
     <header className="border-b border-border">
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-        <Link href="/" className="font-semibold tracking-tight">
-          {t("brand")}
+        <Link
+          href="/"
+          className="font-semibold tracking-tight whitespace-nowrap"
+        >
+          <span className="sm:hidden">{t("brandShort")}</span>
+          <span className="hidden sm:inline">{t("brand")}</span>
         </Link>
         <nav className="flex items-center gap-3 text-sm">
           <Link

@@ -5,6 +5,7 @@
   },
   "Header": {
     "brand": "T/F Quiz · Claude Code",
+    "brandShort": "T/F Quiz",
     "leaderboard": "Leaderboard",
     "about": "About",
     "language": "Language",
@@ -13,8 +14,117 @@
   "Footer": {
     "disclaimer": "Community project, not affiliated with Anthropic."
   },
+  "Levels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
   "Home": {
     "title": "How much do you know about Claude Code?",
-    "subtitle": "10 true-or-false statements. Pick a level, answer them all and see your result at the end."
+    "subtitle": "10 true-or-false statements. Pick a level, answer them all and see your result at the end.",
+    "chooseLevel": "Pick a level",
+    "pointsPerCorrect": "{points} pts per correct answer",
+    "maxScore": "up to {max} pts",
+    "play": "Play",
+    "seeLeaderboard": "See the leaderboard",
+    "beginnerDescription": "What Claude Code is, where it runs, who it's for and how access works.",
+    "intermediateDescription": "Daily use: commands, shortcuts, CLAUDE.md, permission modes and plan mode.",
+    "advancedDescription": "Hooks, MCP, skills, plugins, subagents, headless mode, CI and sandboxing."
+  },
+  "Quiz": {
+    "loading": "Getting your questions ready…",
+    "progress": "Question {current} of {total}",
+    "statementLabel": "Is this statement true or false?",
+    "true": "True",
+    "false": "False",
+    "back": "Back",
+    "next": "Next",
+    "seeResult": "See result",
+    "submitting": "Scoring…",
+    "keyboardHint": "Shortcuts: T or ← for True · F or → for False",
+    "answeredCount": "{count} of {total} answered",
+    "errorStart": "Couldn't load the questions.",
+    "errorSubmit": "Couldn't send your answers. They're still saved here.",
+    "errorExpired": "This round has expired. Start a new one.",
+    "errorRateLimited": "Too many attempts in a row. Wait a few minutes and try again.",
+    "retry": "Try again",
+    "restart": "Start a new round",
+    "backHome": "Back to home"
+  },
+  "Result": {
+    "title": "Your result",
+    "level": "{level} level",
+    "points": "{score} pts",
+    "correct": "{correct}/{total} correct",
+    "time": "Time: {time}",
+    "band_low": "Good start! Read the explanations below and try again.",
+    "band_mid": "Nice! You already know a lot about Claude Code.",
+    "band_high": "Excellent! You've mastered Claude Code.",
+    "band_perfect": "Perfect! 10 out of 10. Ready for the next level?",
+    "reviewTitle": "Answer review",
+    "yourAnswer": "Your answer: {answer}",
+    "correctAnswer": "Correct answer: {answer}",
+    "correctLabel": "Correct",
+    "wrongLabel": "Wrong",
+    "learnMore": "Learn more in the docs",
+    "playAgain": "Play again",
+    "otherLevel": "Try another level",
+    "seeLeaderboard": "See leaderboard",
+    "notFound": "We couldn't find this result.",
+    "notFinished": "This round hasn't been finished yet."
+  },
+  "Publish": {
+    "title": "Join the leaderboard",
+    "nicknameLabel": "Nickname",
+    "nicknamePlaceholder": "How you want to appear",
+    "nicknameHint": "3 to 20 characters: letters, numbers, space, _ - .",
+    "submit": "Submit",
+    "sending": "Sending…",
+    "success": "You're #{rank} of {total}!",
+    "alreadyPublished": "This result is already on the leaderboard.",
+    "tooFast": "This round was too fast to be ranked.",
+    "notOwner": "Only the person who played this round can submit it.",
+    "error_too_short": "Your nickname needs at least 3 characters.",
+    "error_too_long": "Your nickname can have at most 20 characters.",
+    "error_invalid_chars": "Use only letters, numbers, space, _ - or .",
+    "error_blocked": "That nickname isn't allowed. Pick another one.",
+    "errorNetwork": "Couldn't submit. Please try again.",
+    "errorRateLimited": "Too many attempts. Wait a few minutes."
+  },
+  "Share": {
+    "title": "Share",
+    "text": "I scored {score} pts ({correct}/10) on the {level} level of the True or False Quiz about Claude Code! Can you beat me?",
+    "native": "Share",
+    "linkedin": "LinkedIn",
+    "x": "X",
+    "copy": "Copy text",
+    "copied": "Copied!"
+  },
+  "Leaderboard": {
+    "title": "Leaderboard",
+    "subtitle": "Total score; ties go to the faster time.",
+    "rank": "#",
+    "nickname": "Nickname",
+    "score": "Points",
+    "level": "Level",
+    "correct": "Correct",
+    "time": "Time",
+    "date": "Date",
+    "empty": "Be the first one on the leaderboard!",
+    "loadMore": "Load more",
+    "loading": "Loading…",
+    "you": "you",
+    "play": "Play now"
+  },
+  "About": {
+    "title": "About this project",
+    "body1": "This is a community quiz to test and learn about Claude Code, Anthropic's agentic coding tool.",
+    "body2": "Every statement was written from the official documentation, and each answer links to the page that confirms it. Claude Code moves fast; if something looks outdated, check the docs.",
+    "disclaimer": "This project is not affiliated with, sponsored or endorsed by Anthropic.",
+    "docsLink": "Official Claude Code documentation"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "backHome": "Back to home"
   }
 }

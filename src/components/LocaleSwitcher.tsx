@@ -1,7 +1,6 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useParams } from "next/navigation";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type AppLocale } from "@/i18n/routing";
 
@@ -10,8 +9,9 @@ const LABELS: Record<AppLocale, string> = { pt: "PT", en: "EN" };
 // Reads the pathname, so it must render inside <Suspense> (cacheComponents).
 export function LocaleSwitcher({ label }: { label: string }) {
   const locale = useLocale();
+  // Without `pathnames` config this is the real path minus the locale prefix,
+  // e.g. "/quiz/advanced", so switching keeps the current page.
   const pathname = usePathname();
-  const params = useParams();
   const router = useRouter();
 
   return (
@@ -24,14 +24,9 @@ export function LocaleSwitcher({ label }: { label: string }) {
         <button
           key={l}
           type="button"
+          lang={l}
           aria-pressed={l === locale}
-          onClick={() =>
-            router.replace(
-              // @ts-expect-error -- params always match the current pathname
-              { pathname, params },
-              { locale: l },
-            )
-          }
+          onClick={() => router.replace(pathname, { locale: l })}
           className="rounded-full px-3 py-1 text-xs font-medium transition-colors aria-pressed:bg-accent aria-pressed:text-accent-foreground"
         >
           {LABELS[l]}
