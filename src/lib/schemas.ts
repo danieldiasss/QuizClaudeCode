@@ -54,20 +54,40 @@ export type PublicQuestion = { id: string; statement: string };
 
 // ---- API request bodies ----
 
+const SessionTokenSchema = z.string().min(20).max(100);
+
 export const StartQuizBodySchema = z.object({
   level: LevelSchema,
   locale: LocaleSchema,
+  /** Question ids of the player's previous round, to avoid repeats. */
+  exclude: z.array(z.string().max(20)).max(30).optional(),
 });
 
 export const SubmitQuizBodySchema = z.object({
   sessionId: z.uuid(),
+  token: SessionTokenSchema,
   answers: z.record(z.string(), z.boolean()),
 });
 
 export const PublishBodySchema = z.object({
   sessionId: z.uuid(),
+  token: SessionTokenSchema,
   nickname: z.string().max(100),
 });
+
+export type StartQuizResponse = {
+  sessionId: string;
+  token: string;
+  level: Level;
+  locale: Locale;
+  questions: PublicQuestion[];
+};
+
+export type PublishResponse = {
+  rank: number;
+  total: number;
+  entry: LeaderboardEntry;
+};
 
 export const LeaderboardQuerySchema = z.object({
   limit: z.coerce.number().int().min(1).max(100).default(100),
