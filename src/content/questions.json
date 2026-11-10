@@ -1,0 +1,962 @@
+[
+  {
+    "id": "beg-001",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O Claude Code consegue ler o seu código, editar arquivos e executar comandos.",
+      "en": "Claude Code can read your codebase, edit files and run commands."
+    },
+    "explanation": {
+      "pt": "O Claude Code é uma ferramenta agêntica: ele lê o projeto, edita arquivos, roda comandos e se integra às suas ferramentas de desenvolvimento.",
+      "en": "Claude Code is an agentic tool: it reads your project, edits files, runs commands and integrates with your development tools."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewed": false
+  },
+  {
+    "id": "beg-002",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code só funciona dentro do navegador.",
+      "en": "Claude Code only works inside the web browser."
+    },
+    "explanation": {
+      "pt": "Ele roda no terminal, em extensões de IDE (VS Code e JetBrains), no app desktop e também no navegador.",
+      "en": "It runs in the terminal, in IDE extensions (VS Code and JetBrains), in the desktop app and also in the browser."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewed": false
+  },
+  {
+    "id": "beg-003",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "Arquivos CLAUDE.md, configurações e servidores MCP valem para as diferentes superfícies do Claude Code, como terminal, IDE e desktop.",
+      "en": "CLAUDE.md files, settings and MCP servers carry across Claude Code's surfaces, such as the terminal, IDE and desktop."
+    },
+    "explanation": {
+      "pt": "Todas as superfícies compartilham o mesmo motor, então a configuração do projeto é reaproveitada entre elas.",
+      "en": "All surfaces share the same engine, so your project configuration is reused across them."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewed": false
+  },
+  {
+    "id": "beg-004",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O plano gratuito do claude.ai inclui acesso ao Claude Code.",
+      "en": "The free claude.ai plan includes access to Claude Code."
+    },
+    "explanation": {
+      "pt": "O Claude Code exige uma assinatura paga, uma conta do Console (API) ou um provedor de nuvem compatível; o plano gratuito não dá acesso.",
+      "en": "Claude Code requires a paid subscription, a Console (API) account or a supported cloud provider; the free plan does not include it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/setup",
+    "reviewed": false
+  },
+  {
+    "id": "beg-005",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "Além de contas da Anthropic, o Claude Code pode ser usado por meio de provedores de nuvem como o Amazon Bedrock.",
+      "en": "Besides Anthropic accounts, Claude Code can be used through cloud providers such as Amazon Bedrock."
+    },
+    "explanation": {
+      "pt": "O CLI, o VS Code e o JetBrains suportam provedores terceiros, como Amazon Bedrock, Google Cloud e Microsoft Foundry.",
+      "en": "The CLI, VS Code and JetBrains support third-party providers such as Amazon Bedrock, Google Cloud and Microsoft Foundry."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/authentication",
+    "reviewed": false
+  },
+  {
+    "id": "beg-006",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "Para o Claude Code entender seu projeto, você precisa copiar e colar os arquivos na conversa.",
+      "en": "For Claude Code to understand your project, you must copy and paste your files into the chat."
+    },
+    "explanation": {
+      "pt": "O Claude Code lê os arquivos do projeto sozinho, conforme precisa; não é necessário colar contexto manualmente.",
+      "en": "Claude Code reads project files on its own as needed; you don't have to paste context manually."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/quickstart",
+    "reviewed": false
+  },
+  {
+    "id": "beg-007",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O Claude Code consegue criar commits e branches no Git e ajudar a resolver conflitos de merge.",
+      "en": "Claude Code can create Git commits and branches and help resolve merge conflicts."
+    },
+    "explanation": {
+      "pt": "O Claude Code trabalha com Git: ele pode preparar mudanças, fazer commits, criar branches e resolver conflitos.",
+      "en": "Claude Code works with Git: it can stage changes, commit, create branches and resolve conflicts."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/quickstart",
+    "reviewed": false
+  },
+  {
+    "id": "beg-008",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "Instalar a extensão do VS Code deixa o comando `claude` disponível automaticamente em qualquer terminal.",
+      "en": "Installing the VS Code extension automatically makes the `claude` command available in any terminal."
+    },
+    "explanation": {
+      "pt": "A extensão traz uma cópia própria do CLI para o painel de chat, mas não adiciona `claude` ao PATH; para usar no terminal é preciso instalar o CLI.",
+      "en": "The extension bundles its own CLI copy for the chat panel but doesn't add `claude` to your PATH; to use it in a terminal you need the standalone install."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/vs-code",
+    "reviewed": false
+  },
+  {
+    "id": "beg-009",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O plugin do Claude Code para IDEs JetBrains exige que o CLI do Claude Code seja instalado separadamente.",
+      "en": "The Claude Code plugin for JetBrains IDEs requires the Claude Code CLI to be installed separately."
+    },
+    "explanation": {
+      "pt": "Diferente da extensão do VS Code, o plugin JetBrains não inclui o CLI; ele usa o CLI instalado na máquina.",
+      "en": "Unlike the VS Code extension, the JetBrains plugin doesn't bundle the CLI; it uses the CLI installed on your machine."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/jetbrains",
+    "reviewed": false
+  },
+  {
+    "id": "beg-010",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code na web roda no seu computador e para quando você fecha o notebook.",
+      "en": "Claude Code on the web runs on your own computer and stops when you close your laptop."
+    },
+    "explanation": {
+      "pt": "As sessões na web rodam em uma máquina virtual isolada gerenciada pela Anthropic e continuam executando mesmo depois que você se desconecta.",
+      "en": "Web sessions run in an isolated Anthropic-managed virtual machine and keep running even after you disconnect."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/claude-code-on-the-web",
+    "reviewed": false
+  },
+  {
+    "id": "beg-011",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O Claude Code pode ser instalado em Windows, macOS e Linux.",
+      "en": "Claude Code can be installed on Windows, macOS and Linux."
+    },
+    "explanation": {
+      "pt": "Os sistemas suportados incluem macOS, Windows 10 ou superior e distribuições Linux como Ubuntu, Debian e Alpine.",
+      "en": "Supported systems include macOS, Windows 10 or later and Linux distributions such as Ubuntu, Debian and Alpine."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/setup",
+    "reviewed": false
+  },
+  {
+    "id": "beg-012",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code funciona totalmente offline, sem conexão com a internet.",
+      "en": "Claude Code works fully offline, without an internet connection."
+    },
+    "explanation": {
+      "pt": "Uma conexão com a internet é um requisito: o modelo roda nos servidores, não na sua máquina.",
+      "en": "An internet connection is a requirement: the model runs on servers, not on your machine."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/setup",
+    "reviewed": false
+  },
+  {
+    "id": "beg-013",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "Em contas comerciais (Team, Enterprise e API), a Anthropic não treina modelos com o código e os prompts enviados ao Claude Code, a menos que o cliente opte por isso.",
+      "en": "For commercial accounts (Team, Enterprise and API), Anthropic does not train models on code and prompts sent to Claude Code unless the customer opts in."
+    },
+    "explanation": {
+      "pt": "Nos termos comerciais, o padrão é não usar os dados para treinamento; nos planos de consumidor, é o próprio usuário quem escolhe.",
+      "en": "Under commercial terms the default is no training on your data; on consumer plans, the user chooses."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/data-usage",
+    "reviewed": false
+  },
+  {
+    "id": "beg-014",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code é completamente imune a ataques de prompt injection.",
+      "en": "Claude Code is completely immune to prompt injection attacks."
+    },
+    "explanation": {
+      "pt": "Existem proteções, como o sistema de permissões e a detecção de injeção de comandos, mas a documentação diz que nenhum sistema é totalmente imune; revise os comandos antes de aprovar.",
+      "en": "There are safeguards such as the permission system and command-injection detection, but the docs say no system is completely immune; review commands before approving them."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/security",
+    "reviewed": false
+  },
+  {
+    "id": "beg-015",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O app desktop do Claude traz o Claude Code em uma aba própria, sem precisar instalar o CLI separadamente.",
+      "en": "The Claude desktop app includes Claude Code in its own tab, with no separate CLI install needed."
+    },
+    "explanation": {
+      "pt": "O Claude Code é a aba Code do app desktop do Claude, disponível para macOS e Windows.",
+      "en": "Claude Code is the Code tab of the Claude desktop app, available for macOS and Windows."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/desktop",
+    "reviewed": false
+  },
+  {
+    "id": "beg-016",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code apenas responde perguntas sobre código e não consegue executar comandos no terminal.",
+      "en": "Claude Code only answers questions about code and cannot run terminal commands."
+    },
+    "explanation": {
+      "pt": "Além de responder, ele age: edita arquivos e executa comandos, sempre de acordo com o modo de permissão da sessão.",
+      "en": "Beyond answering, it takes action: it edits files and runs commands, according to the session's permission mode."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/overview",
+    "reviewed": false
+  },
+  {
+    "id": "beg-017",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "O Claude Code pode ser integrado ao GitHub Actions para trabalhar em issues e pull requests.",
+      "en": "Claude Code can be integrated with GitHub Actions to work on issues and pull requests."
+    },
+    "explanation": {
+      "pt": "Entre as integrações oficiais estão GitHub Actions, GitLab CI/CD, Slack e a extensão para Chrome.",
+      "en": "Official integrations include GitHub Actions, GitLab CI/CD, Slack and the Chrome extension."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/platforms",
+    "reviewed": false
+  },
+  {
+    "id": "beg-018",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O custo de uso do Claude Code é sempre o mesmo, independentemente do modelo escolhido e do tamanho do projeto.",
+      "en": "The cost of using Claude Code is always the same regardless of the chosen model and project size."
+    },
+    "explanation": {
+      "pt": "O custo depende do modelo, do tamanho da base de código e do padrão de uso, pois é baseado no consumo de tokens.",
+      "en": "Cost depends on the model, codebase size and usage patterns, since it is based on token consumption."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/costs",
+    "reviewed": false
+  },
+  {
+    "id": "beg-019",
+    "level": "beginner",
+    "topic": "business",
+    "answer": true,
+    "statement": {
+      "pt": "As superfícies locais do Claude Code (terminal, IDE e desktop) podem ser usadas juntas no mesmo projeto, compartilhando a configuração.",
+      "en": "Claude Code's local surfaces (terminal, IDE and desktop) can be mixed on the same project, sharing configuration."
+    },
+    "explanation": {
+      "pt": "As superfícies locais compartilham configuração, memória do projeto e servidores MCP, então você pode alternar entre elas.",
+      "en": "Local surfaces share configuration, project memory and MCP servers, so you can switch between them."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/platforms",
+    "reviewed": false
+  },
+  {
+    "id": "beg-020",
+    "level": "beginner",
+    "topic": "business",
+    "answer": false,
+    "statement": {
+      "pt": "O comando `/feedback` envia apenas uma nota de avaliação, nunca trechos da sua conversa.",
+      "en": "The `/feedback` command only sends a rating, never any part of your conversation."
+    },
+    "explanation": {
+      "pt": "O `/feedback` envia à Anthropic uma cópia da conversa, incluindo o código presente nela.",
+      "en": "`/feedback` sends Anthropic a copy of the conversation, including any code in it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/data-usage",
+    "reviewed": false
+  },
+  {
+    "id": "int-001",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O arquivo CLAUDE.md serve para dar ao Claude Code instruções persistentes sobre o projeto, carregadas no início da sessão.",
+      "en": "The CLAUDE.md file gives Claude Code persistent project instructions that are loaded at the start of a session."
+    },
+    "explanation": {
+      "pt": "O CLAUDE.md é a memória do projeto: comandos, convenções e regras que o Claude lê ao iniciar cada sessão.",
+      "en": "CLAUDE.md is project memory: commands, conventions and rules Claude reads at the start of every session."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-002",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "O comando `/clear` resume a conversa para que o Claude continue lembrando dela em um contexto limpo.",
+      "en": "The `/clear` command summarizes the conversation so Claude keeps remembering it in a fresh context."
+    },
+    "explanation": {
+      "pt": "O `/clear` inicia uma conversa nova com o contexto vazio. Quem resume a conversa para liberar contexto é o `/compact`.",
+      "en": "`/clear` starts a new conversation with an empty context. Summarizing to free up context is what `/compact` does."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewed": false
+  },
+  {
+    "id": "int-003",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O comando `/compact` libera contexto resumindo a conversa até aquele ponto.",
+      "en": "The `/compact` command frees up context by summarizing the conversation so far."
+    },
+    "explanation": {
+      "pt": "O `/compact` mantém a mesma conversa, mas troca o histórico por um resumo; você pode passar instruções sobre o que priorizar.",
+      "en": "`/compact` keeps the same conversation but replaces the history with a summary; you can pass instructions on what to focus on."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewed": false
+  },
+  {
+    "id": "int-004",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Rodar `/init` em um projeto que já tem CLAUDE.md apaga o arquivo e cria outro do zero.",
+      "en": "Running `/init` in a project that already has a CLAUDE.md deletes it and creates a new one from scratch."
+    },
+    "explanation": {
+      "pt": "O `/init` cria um CLAUDE.md inicial; se já existir um, ele sugere melhorias em vez de sobrescrever.",
+      "en": "`/init` creates a starter CLAUDE.md; if one already exists, it suggests improvements instead of overwriting it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-005",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O CLAUDE.local.md é indicado para preferências pessoais no projeto e deve ficar fora do controle de versão.",
+      "en": "CLAUDE.local.md is meant for personal project preferences and should be kept out of version control."
+    },
+    "explanation": {
+      "pt": "A documentação recomenda adicioná-lo ao .gitignore, porque ele guarda configurações suas, não do time.",
+      "en": "The docs recommend adding it to .gitignore, since it holds your own preferences, not the team's."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-006",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Regras escritas no CLAUDE.md são impostas rigidamente: o Claude nunca consegue agir contra elas.",
+      "en": "Rules written in CLAUDE.md are strictly enforced: Claude can never act against them."
+    },
+    "explanation": {
+      "pt": "O CLAUDE.md é contexto, não configuração imposta. Para bloquear uma ação de verdade, use regras de permissão ou um hook PreToolUse.",
+      "en": "CLAUDE.md is context, not enforced configuration. To truly block an action, use permission rules or a PreToolUse hook."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-007",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "Começar uma mensagem com `!` executa o texto como comando de shell e adiciona a saída à sessão.",
+      "en": "Starting a message with `!` runs it as a shell command and adds its output to the session."
+    },
+    "explanation": {
+      "pt": "No modo bash com `!`, o comando roda diretamente e o Claude passa a enxergar a saída para responder sobre ela.",
+      "en": "In `!` bash mode the command runs directly and Claude can see its output to respond to it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/interactive-mode",
+    "reviewed": false
+  },
+  {
+    "id": "int-008",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Apertar Esc uma vez encerra o Claude Code.",
+      "en": "Pressing Esc once exits Claude Code."
+    },
+    "explanation": {
+      "pt": "O Esc interrompe o Claude no meio de uma tarefa, mantendo o que já foi feito. Para sair, use Ctrl+C ou Ctrl+D.",
+      "en": "Esc interrupts Claude mid-task and keeps the work done so far. To exit, use Ctrl+C or Ctrl+D."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/interactive-mode",
+    "reviewed": false
+  },
+  {
+    "id": "int-009",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O atalho Shift+Tab alterna entre os modos de permissão da sessão.",
+      "en": "The Shift+Tab shortcut cycles through the session's permission modes."
+    },
+    "explanation": {
+      "pt": "Com Shift+Tab você passa por modos como o padrão, o acceptEdits e o plan mode.",
+      "en": "Shift+Tab moves through modes such as default, acceptEdits and plan mode."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/interactive-mode",
+    "reviewed": false
+  },
+  {
+    "id": "int-010",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "O comando `claude --continue` abre uma lista interativa com todas as suas sessões anteriores.",
+      "en": "The `claude --continue` command opens an interactive list of all your past sessions."
+    },
+    "explanation": {
+      "pt": "O `--continue` retoma direto a conversa mais recente do diretório atual. Quem abre o seletor de sessões é o `--resume`.",
+      "en": "`--continue` directly resumes the most recent conversation in the current directory. The session picker is opened by `--resume`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/common-workflows",
+    "reviewed": false
+  },
+  {
+    "id": "int-011",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "No plan mode, o Claude lê arquivos e propõe um plano, mas não edita nada até você aprovar.",
+      "en": "In plan mode, Claude reads files and proposes a plan but doesn't edit anything until you approve."
+    },
+    "explanation": {
+      "pt": "O plan mode serve para explorar e planejar com segurança; as edições só começam depois da sua aprovação.",
+      "en": "Plan mode is for safely exploring and planning; edits only start after your approval."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/common-workflows",
+    "reviewed": false
+  },
+  {
+    "id": "int-012",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Digitar `@` no início do prompt abre a lista de comandos slash.",
+      "en": "Typing `@` at the start of the prompt opens the list of slash commands."
+    },
+    "explanation": {
+      "pt": "O `@` abre o autocompletar de caminhos de arquivo para mencioná-los. Comandos e skills começam com `/`.",
+      "en": "`@` opens file path autocomplete to mention files. Commands and skills start with `/`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/interactive-mode",
+    "reviewed": false
+  },
+  {
+    "id": "int-013",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "Um CLAUDE.md pode importar outros arquivos usando a sintaxe `@caminho/do/arquivo`.",
+      "en": "A CLAUDE.md can import other files using the `@path/to/file` syntax."
+    },
+    "explanation": {
+      "pt": "Imports permitem reaproveitar documentos (como um README) sem copiar o conteúdo; caminhos relativos partem do arquivo que importa.",
+      "en": "Imports let you reuse documents (like a README) without copying them; relative paths resolve from the importing file."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-014",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Os checkpoints do Claude Code substituem o Git, pois registram todas as mudanças, inclusive as feitas por comandos Bash.",
+      "en": "Claude Code checkpoints replace Git, since they track every change, including those made by Bash commands."
+    },
+    "explanation": {
+      "pt": "Mudanças feitas só via Bash e edições externas normalmente não são rastreadas, e a documentação diz que checkpoints não substituem o controle de versão.",
+      "en": "Bash-only changes and external edits are generally not tracked, and the docs say checkpoints are not a replacement for version control."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/checkpointing",
+    "reviewed": false
+  },
+  {
+    "id": "int-015",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "Apertar Esc duas vezes com o prompt vazio abre o menu para voltar a um ponto anterior da sessão (rewind).",
+      "en": "Pressing Esc twice on an empty prompt opens the menu to go back to an earlier point in the session (rewind)."
+    },
+    "explanation": {
+      "pt": "Com o prompt vazio, Esc Esc abre o rewind, que também pode ser aberto com `/rewind`. Se houver texto digitado, ele apenas limpa o rascunho.",
+      "en": "With an empty prompt, Esc Esc opens rewind, also available via `/rewind`. If there's text typed, it just clears the draft."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/checkpointing",
+    "reviewed": false
+  },
+  {
+    "id": "int-016",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "O Claude Code não aceita imagens: só é possível enviar texto.",
+      "en": "Claude Code doesn't accept images: you can only send text."
+    },
+    "explanation": {
+      "pt": "Você pode arrastar e soltar, colar com Ctrl+V (Alt+V no Windows) ou informar o caminho de uma imagem, como um print de tela ou um mockup.",
+      "en": "You can drag and drop, paste with Ctrl+V (Alt+V on Windows) or give an image path, such as a screenshot or mockup."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/common-workflows",
+    "reviewed": false
+  },
+  {
+    "id": "int-017",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O comando `claude -p \"...\"` executa uma consulta única e imprime a resposta sem entrar no modo interativo.",
+      "en": "The `claude -p \"...\"` command runs a one-off query and prints the response without entering interactive mode."
+    },
+    "explanation": {
+      "pt": "A flag `-p` (`--print`) é útil para scripts e para receber dados via pipe, como `git log | claude -p \"resuma\"`.",
+      "en": "The `-p` (`--print`) flag is handy for scripts and piped input, like `git log | claude -p \"summarize\"`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/cli-reference",
+    "reviewed": false
+  },
+  {
+    "id": "int-018",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "Todos os arquivos CLAUDE.md de subpastas do projeto são carregados de uma vez quando a sessão começa.",
+      "en": "Every CLAUDE.md file in the project's subfolders is loaded all at once when the session starts."
+    },
+    "explanation": {
+      "pt": "Na inicialização entram o CLAUDE.md do diretório atual e dos diretórios acima. Os de subpastas são carregados sob demanda, quando o Claude mexe em arquivos ali.",
+      "en": "At launch, CLAUDE.md files from the current directory and its parents are loaded. Subfolder ones load on demand, when Claude works on files there."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/memory",
+    "reviewed": false
+  },
+  {
+    "id": "int-019",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": true,
+    "statement": {
+      "pt": "O comando `/model` permite trocar o modelo de IA usado pelo Claude Code.",
+      "en": "The `/model` command lets you switch the AI model used by Claude Code."
+    },
+    "explanation": {
+      "pt": "O `/model` troca o modelo e o salva como padrão para novas sessões; a flag `--model` define o modelo de uma sessão específica.",
+      "en": "`/model` switches the model and saves it as the default for new sessions; the `--model` flag sets it for a single session."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/commands",
+    "reviewed": false
+  },
+  {
+    "id": "int-020",
+    "level": "intermediate",
+    "topic": "daily-use",
+    "answer": false,
+    "statement": {
+      "pt": "No modo acceptEdits, o Claude executa qualquer comando de shell sem perguntar, exatamente como no bypassPermissions.",
+      "en": "In acceptEdits mode, Claude runs any shell command without asking, exactly like bypassPermissions."
+    },
+    "explanation": {
+      "pt": "O acceptEdits aprova automaticamente edições de arquivo e comandos comuns de sistema de arquivos; outros comandos ainda pedem permissão. Só o bypassPermissions libera tudo.",
+      "en": "acceptEdits auto-approves file edits and common filesystem commands; other commands still ask. Only bypassPermissions allows everything."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/permission-modes",
+    "reviewed": false
+  },
+  {
+    "id": "adv-001",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "Um hook PreToolUse pode bloquear a chamada de uma ferramenta antes que ela seja executada.",
+      "en": "A PreToolUse hook can block a tool call before it runs."
+    },
+    "explanation": {
+      "pt": "O PreToolUse roda antes da ferramenta e pode negar a chamada; a documentação o indica justamente para bloquear ações de forma garantida.",
+      "en": "PreToolUse runs before the tool and can deny the call; the docs recommend it precisely to block actions reliably."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/hooks",
+    "reviewed": false
+  },
+  {
+    "id": "adv-002",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "As configurações do usuário (`~/.claude/settings.json`) têm prioridade sobre o `.claude/settings.json` compartilhado do projeto.",
+      "en": "User settings (`~/.claude/settings.json`) take precedence over the project's shared `.claude/settings.json`."
+    },
+    "explanation": {
+      "pt": "A ordem é: managed, linha de comando, projeto local, projeto compartilhado e, por último, usuário. O projeto vence o usuário.",
+      "en": "The order is: managed, command line, local project, shared project and, last, user. The project wins over the user."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/settings",
+    "reviewed": false
+  },
+  {
+    "id": "adv-003",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "Uma regra de permissão `deny` vence uma regra `allow` para a mesma ação, não importa em qual escopo cada uma foi definida.",
+      "en": "A `deny` permission rule beats an `allow` rule for the same action, no matter which scope each one is defined in."
+    },
+    "explanation": {
+      "pt": "As regras são avaliadas na ordem deny, ask, allow; um allow não consegue abrir exceção em um deny.",
+      "en": "Rules are evaluated in the order deny, ask, allow; an allow cannot carve an exception out of a deny."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/permissions",
+    "reviewed": false
+  },
+  {
+    "id": "adv-004",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "Criar um arquivo `.claudeignore` impede o Claude Code de ler os arquivos listados nele.",
+      "en": "Creating a `.claudeignore` file prevents Claude Code from reading the files listed in it."
+    },
+    "explanation": {
+      "pt": "O `.claudeignore` não tem efeito. Para bloquear leituras, use regras de permissão `deny`, como `Read(./.env)`.",
+      "en": "`.claudeignore` has no effect. To block reads, use `deny` permission rules such as `Read(./.env)`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/permissions",
+    "reviewed": false
+  },
+  {
+    "id": "adv-005",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "Servidores MCP com escopo de projeto ficam em um arquivo `.mcp.json` na raiz do projeto, pensado para ser versionado.",
+      "en": "Project-scoped MCP servers live in a `.mcp.json` file at the project root, meant to be committed."
+    },
+    "explanation": {
+      "pt": "O escopo `project` compartilha os servidores com o time pelo repositório; o Claude pede confirmação antes de usá-los em sessões interativas.",
+      "en": "The `project` scope shares servers with the team through the repo; Claude asks before using them in interactive sessions."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewed": false
+  },
+  {
+    "id": "adv-006",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "SSE é o transporte recomendado para conectar servidores MCP remotos.",
+      "en": "SSE is the recommended transport for connecting to remote MCP servers."
+    },
+    "explanation": {
+      "pt": "O recomendado para servidores remotos é HTTP; o SSE está marcado como obsoleto (deprecated).",
+      "en": "HTTP is the recommended transport for remote servers; SSE is marked as deprecated."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewed": false
+  },
+  {
+    "id": "adv-007",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "Uma skill é definida por um arquivo SKILL.md com frontmatter YAML, e skills de projeto ficam em `.claude/skills/<nome>/`.",
+      "en": "A skill is defined by a SKILL.md file with YAML frontmatter, and project skills live in `.claude/skills/<name>/`."
+    },
+    "explanation": {
+      "pt": "Também existem skills pessoais em `~/.claude/skills/` e skills de plugins. Elas podem ser chamadas com `/nome` ou carregadas automaticamente pelo Claude.",
+      "en": "There are also personal skills in `~/.claude/skills/` and plugin skills. They can be invoked with `/name` or loaded automatically by Claude."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/skills",
+    "reviewed": false
+  },
+  {
+    "id": "adv-008",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "Subagents compartilham a janela de contexto da conversa principal e enxergam todo o histórico dela.",
+      "en": "Subagents share the main conversation's context window and can see its entire history."
+    },
+    "explanation": {
+      "pt": "Cada subagent tem sua própria janela de contexto, não vê o histórico principal e devolve apenas um resultado.",
+      "en": "Each subagent has its own context window, doesn't see the main history and returns only a result."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewed": false
+  },
+  {
+    "id": "adv-009",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "Os arquivos de configuração `settings.json` precisam ser JSON estrito: comentários ou vírgulas sobrando geram erro de configuração.",
+      "en": "`settings.json` files must be strict JSON: comments or trailing commas cause a settings error."
+    },
+    "explanation": {
+      "pt": "Ao contrário de alguns arquivos de configuração de editores, o settings.json do Claude Code não aceita comentários nem vírgulas finais.",
+      "en": "Unlike some editor config files, Claude Code's settings.json doesn't accept comments or trailing commas."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/settings",
+    "reviewed": false
+  },
+  {
+    "id": "adv-010",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "Um marketplace de plugins é uma loja hospedada e mantida exclusivamente pela Anthropic.",
+      "en": "A plugin marketplace is a hosted store run exclusively by Anthropic."
+    },
+    "explanation": {
+      "pt": "Um marketplace é um catálogo definido em `.claude-plugin/marketplace.json`; além do oficial, existem marketplaces da comunidade.",
+      "en": "A marketplace is a catalog defined in `.claude-plugin/marketplace.json`; besides the official one, community marketplaces exist."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/plugins/overview",
+    "reviewed": false
+  },
+  {
+    "id": "adv-011",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": true,
+    "statement": {
+      "pt": "Usar `claude -p` com `--output-format json` retorna o resultado em JSON, o que facilita o uso em scripts.",
+      "en": "Using `claude -p` with `--output-format json` returns the result as JSON, which makes scripting easier."
+    },
+    "explanation": {
+      "pt": "O modo não interativo aceita os formatos text (padrão), json e stream-json.",
+      "en": "Non-interactive mode supports text (default), json and stream-json output formats."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewed": false
+  },
+  {
+    "id": "adv-012",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": false,
+    "statement": {
+      "pt": "No modo não interativo (`-p`), o Claude Code pausa e espera você aprovar cada ferramenta que precisa de permissão.",
+      "en": "In non-interactive mode (`-p`), Claude Code pauses and waits for you to approve each tool that needs permission."
+    },
+    "explanation": {
+      "pt": "Não há ninguém para aprovar: chamadas que exigem permissão são negadas, a menos que sejam pré-aprovadas (por exemplo, com `--allowedTools`) ou aprovadas por um hook.",
+      "en": "There's no one to approve: calls needing permission are denied unless pre-approved (e.g. with `--allowedTools`) or approved by a hook."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/headless",
+    "reviewed": false
+  },
+  {
+    "id": "adv-013",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": true,
+    "statement": {
+      "pt": "O Agent SDK oferece pacotes oficiais para Python e TypeScript.",
+      "en": "The Agent SDK offers official packages for Python and TypeScript."
+    },
+    "explanation": {
+      "pt": "Para outras linguagens, a alternativa é executar o CLI como subprocesso com `-p` e saída em JSON.",
+      "en": "For other languages, the alternative is to run the CLI as a subprocess with `-p` and JSON output."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/agent-sdk/overview",
+    "reviewed": false
+  },
+  {
+    "id": "adv-014",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": false,
+    "statement": {
+      "pt": "Por padrão, a GitHub Action do Claude Code é acionada pelo comando `/claude` em comentários.",
+      "en": "By default, the Claude Code GitHub Action is triggered by the `/claude` command in comments."
+    },
+    "explanation": {
+      "pt": "A frase de acionamento padrão é a menção `@claude` em issues e pull requests.",
+      "en": "The default trigger phrase is the `@claude` mention in issues and pull requests."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/github-actions",
+    "reviewed": false
+  },
+  {
+    "id": "adv-015",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": true,
+    "statement": {
+      "pt": "O comando `claude --worktree <nome>` inicia uma sessão em um git worktree isolado, permitindo sessões paralelas sem conflito.",
+      "en": "The `claude --worktree <name>` command starts a session in an isolated git worktree, allowing parallel sessions without conflicts."
+    },
+    "explanation": {
+      "pt": "O worktree fica em `.claude/worktrees/<nome>/`, em uma branch nova, e compartilha o histórico Git com o checkout principal.",
+      "en": "The worktree is created at `.claude/worktrees/<name>/` on a new branch and shares Git history with the main checkout."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/worktrees",
+    "reviewed": false
+  },
+  {
+    "id": "adv-016",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "O sandbox vem ativado por padrão e também isola as ferramentas Read, Edit e WebFetch.",
+      "en": "The sandbox is enabled by default and also isolates the Read, Edit and WebFetch tools."
+    },
+    "explanation": {
+      "pt": "O sandbox vem desligado (ative com `/sandbox`) e protege comandos de shell; ferramentas internas como Read, Edit e WebFetch rodam fora dele.",
+      "en": "The sandbox is off by default (enable it with `/sandbox`) and covers shell commands; built-in tools like Read, Edit and WebFetch run outside it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/sandboxing",
+    "reviewed": false
+  },
+  {
+    "id": "adv-017",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": true,
+    "statement": {
+      "pt": "O sandbox pode limitar o acesso à rede dos comandos de shell a uma lista de domínios permitidos.",
+      "en": "The sandbox can limit shell commands' network access to a list of allowed domains."
+    },
+    "explanation": {
+      "pt": "O tráfego passa por um proxy que confere cada host contra `network.allowedDomains`, que começa vazio.",
+      "en": "Traffic goes through a proxy that checks each host against `network.allowedDomains`, which starts empty."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/sandboxing",
+    "reviewed": false
+  },
+  {
+    "id": "adv-018",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "Servidores adicionados com `claude mcp add` ficam, por padrão, no escopo de usuário (disponíveis em todos os projetos).",
+      "en": "Servers added with `claude mcp add` default to the user scope (available in all projects)."
+    },
+    "explanation": {
+      "pt": "O escopo padrão é `local`: vale só para o projeto atual. Use `--scope user` ou `--scope project` para mudar.",
+      "en": "The default scope is `local`: only the current project. Use `--scope user` or `--scope project` to change it."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/mcp",
+    "reviewed": false
+  },
+  {
+    "id": "adv-019",
+    "level": "advanced",
+    "topic": "automation",
+    "answer": true,
+    "statement": {
+      "pt": "Um subagent pode ser restrito a um conjunto específico de ferramentas pelo campo `tools` na sua definição.",
+      "en": "A subagent can be restricted to a specific set of tools through the `tools` field in its definition."
+    },
+    "explanation": {
+      "pt": "O `tools` funciona como lista de permitidas; se for omitido, o subagent herda as ferramentas disponíveis. Há também o `disallowedTools`.",
+      "en": "`tools` works as an allowlist; if omitted, the subagent inherits the available tools. There is also `disallowedTools`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/sub-agents",
+    "reviewed": false
+  },
+  {
+    "id": "adv-020",
+    "level": "advanced",
+    "topic": "configuration",
+    "answer": false,
+    "statement": {
+      "pt": "Uma skill marcada com `disable-model-invocation: true` some do menu `/`.",
+      "en": "A skill marked `disable-model-invocation: true` disappears from the `/` menu."
+    },
+    "explanation": {
+      "pt": "Essa opção só impede o Claude de carregar a skill sozinho; você ainda pode chamá-la com `/`. Quem esconde do menu é `user-invocable: false`.",
+      "en": "That option only stops Claude from loading the skill on its own; you can still invoke it with `/`. Hiding it from the menu is `user-invocable: false`."
+    },
+    "sourceUrl": "https://code.claude.com/docs/en/skills",
+    "reviewed": false
+  }
+]
