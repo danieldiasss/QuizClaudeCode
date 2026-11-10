@@ -1,0 +1,20 @@
+{
+  "Metadata": {
+    "title": "Quiz V ou F: Claude Code",
+    "description": "Quanto você sabe sobre Claude Code? Responda 10 afirmações de Verdadeiro ou Falso e entre no ranking."
+  },
+  "Header": {
+    "brand": "Quiz V ou F · Claude Code",
+    "leaderboard": "Ranking",
+    "about": "Sobre",
+    "language": "Idioma",
+    "toggleTheme": "Alternar tema claro/escuro"
+  },
+  "Footer": {
+    "disclaimer": "Projeto da comunidade, não afiliado à Anthropic."
+  },
+  "Home": {
+    "title": "Quanto você sabe sobre Claude Code?",
+    "subtitle": "10 afirmações de Verdadeiro ou Falso. Escolha um nível, responda tudo e veja o resultado no final."
+  }
+}

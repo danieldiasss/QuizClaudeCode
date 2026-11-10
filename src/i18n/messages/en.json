@@ -1,0 +1,20 @@
+{
+  "Metadata": {
+    "title": "True or False Quiz: Claude Code",
+    "description": "How much do you know about Claude Code? Answer 10 true-or-false statements and join the leaderboard."
+  },
+  "Header": {
+    "brand": "T/F Quiz · Claude Code",
+    "leaderboard": "Leaderboard",
+    "about": "About",
+    "language": "Language",
+    "toggleTheme": "Toggle light/dark theme"
+  },
+  "Footer": {
+    "disclaimer": "Community project, not affiliated with Anthropic."
+  },
+  "Home": {
+    "title": "How much do you know about Claude Code?",
+    "subtitle": "10 true-or-false statements. Pick a level, answer them all and see your result at the end."
+  }
+}
